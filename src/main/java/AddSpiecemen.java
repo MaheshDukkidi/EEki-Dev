@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
 
-public class AppiumValidationTest {
+public class AddSpiecemen {
 
     public static void main(String[] args) {
         AndroidDriver<MobileElement> driver = null;

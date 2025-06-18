@@ -65,9 +65,25 @@ AppiumAAutomationTestinfD/
 # write Manual Test Cases for the application 
   and execute them with positive and negative scenarios and edge cases 
 
-  # write automation testcases and execute it i have written some testcases in the above Poject
+  # write automation testcases and execute it i have written some testcases in the above Poject for 50 data record creation for harvesting and creating Specimen
   - for launch the application
   - for Creating the the Specimen 
   - for Add Harvesting Section with 50 records given automaticlly as the input field
+
+# Test Execution Instructions
+
+adb start -server
+
+# Configure Appium Desired Capabilities
+
+DesiredCapabilities caps = new DesiredCapabilities();
+            caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+            caps.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
+            caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+            caps.setCapability("appPackage", "com.eekifoods.dev");
+            caps.setCapability("appActivity", "com.eekifoods.MainActivity");
+            
+# Start Appium Server 
+"appium --address 127.0.0.1 --port 4723 --allow-cors" or appium
 
 # Commit and push the code to git repo by adding comments for the code 

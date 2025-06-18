@@ -12,12 +12,12 @@ public class AppLaunch {
     public static void main(String[] args) {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554"); // change to your device name
+        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554"); // 
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 
         // ✅ Instead of APK path, use appPackage and appActivity
-        caps.setCapability("appPackage", "com.eekifoods.dev");         // Replace with your actual app package
-        caps.setCapability("appActivity", "com.eekifoods.MainActivity"); // Replace with your main activity
+        caps.setCapability("appPackage", "com.eekifoods.dev");         // Replace with actual app package
+        caps.setCapability("appActivity", "com.eekifoods.MainActivity"); // Replace with main activity
 
         try {
             AndroidDriver<MobileElement> driver = new AndroidDriver<>(
@@ -26,6 +26,7 @@ public class AppLaunch {
 
            //  Example: Wait for 3 seconds and click an element
           Thread.sleep(3000);
+          driver.quit();
        
           
         } catch (Exception e) {

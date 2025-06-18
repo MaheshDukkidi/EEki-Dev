@@ -88,6 +88,8 @@ public class AddSpiecemen {
       );
       submitButton.click();
       System.out.println("Form submitted successfully!");
+      
+      driver.quit();
         } catch (Exception e) {
             e.printStackTrace();
         }

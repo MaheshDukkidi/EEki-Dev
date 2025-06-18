@@ -53,14 +53,15 @@ AppiumAAutomationTestinfD/
   C:\Program Files\Java\jdk-21
   C:\Program Files\nodejs\
   C:\Program Files\nodejs\npm
+  ANDROID_HOME="C:\Users\Mahesh\AppData\Local\Android\Sdk"
   %ANDROID_HOME%\platform-tools
   %ANDROID_HOME%\emulator
   %ANDROID_HOME%\build-tools\36.0.0
 # In pom.xml add dependencies 
   <dependencies>
-   <!-- Appium Java Client -->
-    <!-- Selenium Java -->
-<!-- Compiler Plugin -->
+  - Appium Java Client -->"io.appium"
+  - Selenium Java 
+  - Compiler Plugin "maven-compiler-plugin"
     </dependency>
 # write Manual Test Cases for the application 
   and execute them with positive and negative scenarios and edge cases 
